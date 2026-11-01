@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CapeMusic — плеер для SoundCloud на Windows</title>
+<meta name="description" content="CapeMusic: десктопный плеер для SoundCloud с живым текстом песен, эквалайзером, плейлистами и Discord-статусом.">
+<meta name="theme-color" content="#0e0e10">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="#top" aria-label="CapeMusic"><img src="assets/logo.svg" alt="" width="26" height="26"><span>CapeMusic</span></a>
+  <nav aria-label="Разделы">
+    <a href="#screens">Скриншоты</a>
+    <a href="#features">Возможности</a>
+    <a href="#changelog">Changelog</a>
+    <a class="btn small primary" href="#download">Скачать</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-shots" aria-hidden="true">
+      <img class="shot s-back" src="assets/lyrics.webp" alt="" width="1020" height="615">
+      <img class="shot s-mid" src="assets/equalizer.webp" alt="" width="1020" height="615">
+      <img class="shot s-front" src="assets/home.webp" alt="" width="1020" height="615">
+    </div>
+    <div class="hero-fade" aria-hidden="true"></div>
+    <div class="hero-text">
+      <h1>CapeMusic</h1>
+      <p class="tagline">Плеер для SoundCloud, в котором слова идут вместе с музыкой.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#download" id="hero-download">Скачать для Windows</a>
+        <a class="btn" href="#changelog">Что нового</a>
+      </div>
+      <p class="hero-meta muted"><span id="hero-version">Windows 10 и новее</span></p>
+    </div>
+  </section>
+
+  <section id="screens" class="block">
+    <h2>Как это выглядит</h2>
+    <div class="gallery">
+      <figure><img loading="lazy" src="assets/home.webp" alt="Главная: недавно слушали, плейлисты, плеер внизу" width="1020" height="615"><figcaption>Главная, плейлисты и плеер</figcaption></figure>
+      <figure><img loading="lazy" src="assets/lyrics.webp" alt="Живой текст песни с подсветкой строки" width="1020" height="615"><figcaption>Живой текст: подсвечена строка, которая поётся сейчас</figcaption></figure>
+      <figure><img loading="lazy" src="assets/equalizer.webp" alt="Эквалайзер на десять полос с кривой" width="1020" height="615"><figcaption>Эквалайзер на 10 полос прямо из плеера</figcaption></figure>
+      <figure><img loading="lazy" src="assets/search.webp" alt="Быстрый поиск по названию и автору" width="1020" height="615"><figcaption>Быстрый поиск по названию и автору</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="features" class="block">
+    <h2>Что внутри</h2>
+    <ul class="features">
+      <li><h3>Живой текст</h3><p>Строки идут по таймингу, как в Яндекс Музыке. Тексты берутся из LRCLIB, если автоподбор ошибся, можно найти вручную и сдвинуть время.</p></li>
+      <li><h3>Эквалайзер и громкость</h3><p>10 полос, пресеты, нормализация громкости. Ползунок громкости и кнопка эквалайзера всегда под рукой.</p></li>
+      <li><h3>Своя библиотека</h3><p>Лайки, плейлисты с обложкой, плейлисты из плейлистов и история по дням: сегодня, вчера, позавчера.</p></li>
+      <li><h3>Повтор и перемешивание</h3><p>Повтор трека или плейлиста. Один и тот же трек на повторе не засоряет историю.</p></li>
+      <li><h3>Discord-статус</h3><p>Друзья видят, что ты слушаешь, с обложкой и временем.</p></li>
+      <li><h3>Темы и горячие клавиши</h3><p>Тёмная и светлая тема, прозрачность окна, свои сочетания клавиш и медиаклавиши.</p></li>
+    </ul>
+  </section>
+
+  <section id="changelog" class="block narrow">
+    <h2>Changelog</h2>
+    <div id="changelog-list" class="changelog" aria-live="polite">
+      <p class="muted">Загружаю список версий…</p>
+    </div>
+    <noscript><p class="muted">Для списка версий нужен JavaScript.</p></noscript>
+  </section>
+
+  <section id="download" class="block narrow download">
+    <img src="assets/icon.png" alt="" width="96" height="96" class="app-icon">
+    <h2>Скачать CapeMusic</h2>
+    <p class="muted" id="download-info">Для Windows 10 и новее. Дальше приложение обновляется само.</p>
+    <a class="btn primary big" id="download-link" href="https://github.com/pandemiaas/capemusic/releases/latest">Скачать установщик</a>
+    <p class="muted small-note">Windows может показать предупреждение «Неизвестный издатель»: у приложения пока нет платной подписи разработчика. Нажми «Подробнее» и «Выполнить в любом случае».</p>
+  </section>
+</main>
+
+<footer class="foot">
+  <span>© CapeMusic</span>
+  <span class="dot">·</span>
+  <a href="privacy.html">Конфиденциальность</a>
+  <span class="dot">·</span>
+  <span class="muted">Не связано с SoundCloud. SoundCloud — товарный знак его владельцев.</span>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
